@@ -12,6 +12,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.post('/twitte', (req: Request, res: Response) => {
+  console.log('hello world');
   const TwitteShcema = z.object({
     user: z.string(),
     text: z.string(),
